@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sunshine Index</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/MapStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    </head>
+<body>
+    <h1> Sunshine Index of the United States </h1>
+    <p class="header">Select a city marker to begin</p>
+    <div class="container">
+            <div id="mapid">
+            </div>
+        <div class="row align-items-end">
+            <div class="col">
+                <button type="button" class="btn btn-secondary btn-lg btn-block" id="ReportButton">
+                    <p id="ButtonCity"></p>
+                </button>
+            </div>
+        </div>    
+    </div>
+    <!--Charts Will go within this container-->
+    <div class="container">
+        <div class="row align-items-start">
+            <div id="ReportInfo" class="col">
+              <h2 id="CityTitle" class="CityInfoText"></h2>
+              <br>
+              <p id="CityInfo" class="CityInfoText"></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row" id="chartRow">
+            <div class="col-6" id="chart">
+                <h4>The percent of sunshine for each month over the year.</h4>
+            </div>
+            <div class="col-6" id="gauge">
+                <h4> The average percent of sunshine over the entire year.</h4>
+            </div> 
+        </div>
+    </div>
+
+    <!--Bootstrap Clies JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <!-- D3 JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+    <script type="text/javascript" src="static/js/Knob.js"></script>
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/SunMap.js"></script>
+
+   <!--  <script type="text/javascript" src="static/js/app.js"></script>
+    <script type="text/javascript" src="static/js/Dial.js"></script> -->
+
+    <!-- <script type="text/javascript" src="static/js/Knob.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+
+body {
+  background: white;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-image: linear-gradient(190deg, rgba(125,194,251,1) 0%, rgba(223,238,251,1) 100%);
+  border-image-slice: 1;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+html { 
+  background-color: white; 
+} 
+
+/* set map, body, and html to 100% of the screen size */
+#mapid {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 500px;  /* or as desired */
+  width: 100%;  /* This means "100% of the width of its container", the .col-md-8 */
+}
+#gauge {
+  width: fit-content;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 2px solid black;
+  padding: 15px;
+}
+#chart {
+  width: fit-content;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+#ReportButton {
+  margin-bottom: 30px;
+  padding: 0px;
+  background: url(/static/imgs/sunshine.jpg) no-repeat;
+  background-size: cover;
+}
+
+p.ButtonCity {
+  text-align: center;
+  top: 6px;
+  margin: 0px;
+}
+
+.text-center {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+#chartRow {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: -20px !important;
+}
+
+p.header {
+  text-align: center;
+}
+
+p.CityInfoText {
+  text-align: center;
+}
